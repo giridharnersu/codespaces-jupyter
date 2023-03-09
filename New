@@ -1,0 +1,33 @@
+gender=input("Enter your gender m or f: ")
+age=int(input("Enter your age: "))
+marital_status=input("Enter marital status: ")
+if gender=="f" and marital_status=="y":
+    if(10<age<=18):
+        print("AGE ERROR")
+    elif(18<age<=30):
+        print("ALREADY MARRIED")
+    elif (age >= 30):
+          print("Happy Married Life")
+elif gender=="f" and marital_status=="n":
+    if(10<age<=18):
+        print("YOU ARE NOT ELIGIBLE FOR MARRIAGE")
+    elif(18<age<=30):
+        print("YOU ARE ELIGIBLE FOR MARRIAGE")
+    else:
+        print("AGE EXCEEDED")
+elif gender=="m" and marital_status=="y":
+    if(10<age<=21):
+        print("AGE ERROR")
+    elif(21<age<=30):
+        print("ALREADY MARRIED")
+    elif (age>= 30):
+        print("Happy Married Life")
+elif gender=="m" and marital_status=="n":
+    if (10<age<=21):
+        print("YOU ARE NOT ELIGIBLE FOR MARRIAGE")
+    elif(18<age<=30):
+        print("YOU ARE ELIGIBLE FOR MARRIAGE")
+    else:
+        print("AGE EXCEEDED")
+else:
+    print("DETAILS ERROR")
